@@ -1,0 +1,311 @@
+/*Table of Contents
+
+SECTION 1:navbar
+SECTION 2:search bar & sign in
+SECTION 3:about us
+SECTION 4:products
+SECTION 5:watch
+SECTION 6:prefooter
+
+*/
+
+/* SECTION 1:navbar styling starts here*/
+body{
+	background-color: black;
+}
+.navbar-expand-lg .navbar-toggler{
+	color:white;
+}
+.navbar{
+	background-color: #edddad;
+	transition: 2s linear;
+}
+.navbar:hover{
+	background-image: url("../images/beverage.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.navbar-nav{
+	margin: 0px;
+	padding: 0px;
+}
+.nav-item{
+	margin: 1em;
+    background-color: rgba(0,0,0,0.5);
+    box-shadow: 2px 2px 20px chocolate inset;
+    font-family: 'Spirax', cursive;
+    font-size: 25px;
+    text-align: center;
+}
+.navbar-light .navbar-nav .nav-link {
+	 color: #fff;
+}
+.active{
+	background-color: rgba(169,64,17,1);
+	color: #fff;
+}
+
+/*navbar styling ends here*/
+
+/* SECTION 2: search bar & sign in icon starts*/
+.main_logo{
+	width: 180px;
+}
+.main_logo{
+	transition: 1s linear 1s;
+}
+.main_logo:hover{
+	transform: rotate(-360deg);
+
+}
+.search{
+	float:right;
+	margin-top: 1em;
+	height:2em;
+	background-color: rgba(243,217,138,0.5);
+	border: 1px solid black;
+}
+.fa-sistrix{
+	width: 2.5em;
+	height:2.5em;
+}
+.sign_in{
+	float: right;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.2em;
+	color: white;
+	clear: both;
+}
+.sign_in a:link{
+	color: white;
+	text-decoration: none;
+}
+.sign_in a:hover{
+	color: chocolate;
+}
+/*search bar & sign in icon ends */
+
+/* SECTION 3: about us styling  starts*/
+.hero_image{
+	background-image: url("../images/teacup.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow: visible;
+}
+.about_row{
+	display: flex;
+	justify-content: flex-end;
+	margin: 0px;
+	padding: 0px;
+}
+.about{
+	float: right;
+	padding: 2em;
+	clear: both;
+	
+}
+.hero-text{
+	font-family: 'Spirax', cursive;
+	font-size: 2.5em;
+	color: #fff;
+ 	background-image: linear-gradient(to bottom, rgba(189,171,123,0.5), rgba(0,0,0,0.5));
+	border: 3px solid black;
+	text-align: center;
+	padding: 1.2em;
+	
+}
+.hero_image{
+	transition: 2s;
+}
+.hero_image:hover{
+   background-image: url("../images/men.jpg");
+}
+.about p{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1em;
+	color: #fff;
+	text-align: justify;
+	line-height: 1.8;
+	
+}
+/* SECTION 3: about us styling  ends*/
+
+/* SECTION 4: section products  styling  starts*/
+.products{
+
+	background-image: url("../images/background1.png");
+	padding-top: 2em;
+
+}
+h2{
+    font-family: 'Spirax', cursive;
+    font-size: 25px;
+    color: #fff;
+    padding: 10px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: rgba(0,0,0,0.5);
+    box-shadow: 2px 2px 20px chocolate inset;
+    
+}
+.explorearea{
+	text-align: center;
+}
+.explore{
+
+	background-color: rgba(169,64,17,1);
+	box-shadow: 2px 2px 20px black inset;
+	font-family: 'Open Sans', sans-serif;
+	margin:1em;
+
+}
+.explore:hover{
+	background-color: black;
+}
+.explore a:link {
+	color:white;
+}
+.explore a:visited{
+	color:white;
+}
+.explore a:hover{
+   color:white;
+   text-decoration: none;
+}
+.gallery p {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+	color: #fff;
+	text-align: center;
+	padding-top: 2em;
+	padding-bottom: 2em;
+	margin:0px;
+}
+
+/* products animation starts here*/
+
+.image {
+  opacity: 1;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.sub_gallery:hover .image {
+  opacity: 0.3;
+}
+
+.sub_gallery:hover .middle{
+  opacity: 2;
+}
+
+.text {
+  background-color: #000;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+/* SECTION 4: section products  styling ends*/
+
+/* SECTION 5: watch section  coding starts  here*/
+.article{
+	background-image: url("../images/background2.png");
+	text-align: center;
+}
+
+.video_text{
+	font-family: 'Spirax', cursive;
+    font-size: 2em;
+    color: #000;
+    text-align: center;
+    padding: 1.2em;
+    margin: 0px;
+}
+/* SECTION 5: watch section  coding starts  here*/
+
+/* SECTION 6 prefooter section  coding starts here*/
+
+.prefooter{
+	background-image: url("../images/background3.png");
+	text-align: center;
+}
+.prefooter p{
+	color: #fff;
+	padding: 2em;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.2em;
+	text-align: center;	
+}
+.subscribe{
+	background-color: rgba(169,64,17,1);
+	box-shadow: 2px 2px 20px black inset;
+	color:white;
+}
+.subscribe:hover{
+	background-color: black;
+}
+.subscribe a:link {
+	color:white;
+}
+.subscribe a:visited{
+	color: white;
+}
+.subscribe a:hover{
+	color:white;
+	text-decoration: none;
+}
+.social{
+	width:30px;
+	height: auto;
+}
+.youtube{
+	width:80px;
+	height: auto;
+}
+.icons{
+	padding: 1em;
+}
+.font_logo{
+	text-align: center;
+}
+.contact{
+	padding-bottom: 10px;
+}
+.address{
+	margin:0px;
+	padding: 10px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.2em;
+	color: #fff;
+}
+.send a:link {
+	color:white;
+}
+.send a:visited{
+	color: black;
+}
+.send a:hover{
+	color: black;
+	text-decoration: none;
+}
+/* SECTION 6 prefooter section  coding starts here*/
+.copyright{
+	clear: both;
+	color: #fff;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
+	background-color: #000;
+	padding: 20px;
+	text-align: center;
+}
